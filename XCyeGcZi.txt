@@ -1,0 +1,623 @@
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+
+local Window = OrionLib:MakeWindow({Name = "Motm Script ", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
+
+local Tab = Window:MakeTab({
+    Name = "Reach Method",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+
+-- Bu alttaki kisim
+Tab:AddButton({
+    Name = "5 studs",
+    Callback = function()
+              getgenv().Kitten = 5
+getgenv().Leg = "Right" -- Left or Right
+getgenv().Reach = 5 -- Change to whatever you want (The game caps it)
+
+game["RunService"].Stepped:Connect(function()
+	if Leg == "Left" and game:GetService("Players").LocalPlayer.Character ~= nil and game:GetService("Players").LocalPlayer.Character.Humanoid.RigType == Enum.HumanoidRigType.R15 then
+		if (workspace.TPSSystem.TPS.Position - game.Players.LocalPlayer.Character:WaitForChild("LeftLowerLeg").Position).Magnitude <= Reach then
+			firetouchinterest(workspace.TPSSystem.TPS, game.Players.LocalPlayer.Character:WaitForChild("LeftLowerLeg"), 0)
+			firetouchinterest(workspace.TPSSystem.TPS, game.Players.LocalPlayer.Character:WaitForChild("LeftLowerLeg"), 1)
+		end
+	end
+	if Leg == "Right" and game:GetService("Players").LocalPlayer.Character ~= nil and game:GetService("Players").LocalPlayer.Character.Humanoid.RigType == Enum.HumanoidRigType.R15 then
+		if (workspace.TPSSystem.TPS.Position - game.Players.LocalPlayer.Character:WaitForChild("RightLowerLeg").Position).Magnitude <= Reach then
+			firetouchinterest(workspace.TPSSystem.TPS, game.Players.LocalPlayer.Character:WaitForChild("RightLowerLeg"), 0)
+			firetouchinterest(workspace.TPSSystem.TPS, game.Players.LocalPlayer.Character:WaitForChild("RightLowerLeg"), 1)
+		end
+	end
+	if Leg == "Right" and game:GetService("Players").LocalPlayer.Character ~= nil and game:GetService("Players").LocalPlayer.Character.Humanoid.RigType == Enum.HumanoidRigType.R6 then
+		if (workspace.TPSSystem.TPS.Position - game.Players.LocalPlayer.Character:WaitForChild("Right Leg").Position).Magnitude <= Reach then
+			firetouchinterest(workspace.TPSSystem.TPS, game.Players.LocalPlayer.Character:WaitForChild("Right Leg"), 0)
+			firetouchinterest(workspace.TPSSystem.TPS, game.Players.LocalPlayer.Character:WaitForChild("Right Leg"), 1)
+		end
+	end
+	if Leg == "Left" and game:GetService("Players").LocalPlayer.Character ~= nil and game:GetService("Players").LocalPlayer.Character.Humanoid.RigType == Enum.HumanoidRigType.R6 then
+		if (workspace.TPSSystem.TPS.Position - game.Players.LocalPlayer.Character:WaitForChild("Left Leg").Position).Magnitude <= Reach then
+			firetouchinterest(workspace.TPSSystem.TPS, game.Players.LocalPlayer.Character:WaitForChild("Left Leg"), 0)
+			firetouchinterest(workspace.TPSSystem.TPS, game.Players.LocalPlayer.Character:WaitForChild("Left Leg"), 1)
+		end
+	end
+end)
+      end    
+})
+
+Tab:AddButton({
+    Name = "5.4 studs",
+    Callback = function()
+              
+ getgenv().Leg = "Right" -- Left or Right
+getgenv().Reach = 5.4 -- Change to whatever you want (The game caps it)
+
+game["RunService"].Stepped:Connect(function()
+	if Leg == "Left" and game:GetService("Players").LocalPlayer.Character ~= nil and game:GetService("Players").LocalPlayer.Character.Humanoid.RigType == Enum.HumanoidRigType.R15 then
+		if (workspace.TPSSystem.TPS.Position - game.Players.LocalPlayer.Character:WaitForChild("LeftLowerLeg").Position).Magnitude <= Reach then
+			firetouchinterest(workspace.TPSSystem.TPS, game.Players.LocalPlayer.Character:WaitForChild("LeftLowerLeg"), 0)
+			firetouchinterest(workspace.TPSSystem.TPS, game.Players.LocalPlayer.Character:WaitForChild("LeftLowerLeg"), 1)
+		end
+	end
+	if Leg == "Right" and game:GetService("Players").LocalPlayer.Character ~= nil and game:GetService("Players").LocalPlayer.Character.Humanoid.RigType == Enum.HumanoidRigType.R15 then
+		if (workspace.TPSSystem.TPS.Position - game.Players.LocalPlayer.Character:WaitForChild("RightLowerLeg").Position).Magnitude <= Reach then
+			firetouchinterest(workspace.TPSSystem.TPS, game.Players.LocalPlayer.Character:WaitForChild("RightLowerLeg"), 0)
+			firetouchinterest(workspace.TPSSystem.TPS, game.Players.LocalPlayer.Character:WaitForChild("RightLowerLeg"), 1)
+		end
+	end
+	if Leg == "Right" and game:GetService("Players").LocalPlayer.Character ~= nil and game:GetService("Players").LocalPlayer.Character.Humanoid.RigType == Enum.HumanoidRigType.R6 then
+		if (workspace.TPSSystem.TPS.Position - game.Players.LocalPlayer.Character:WaitForChild("Right Leg").Position).Magnitude <= Reach then
+			firetouchinterest(workspace.TPSSystem.TPS, game.Players.LocalPlayer.Character:WaitForChild("Right Leg"), 0)
+			firetouchinterest(workspace.TPSSystem.TPS, game.Players.LocalPlayer.Character:WaitForChild("Right Leg"), 1)
+		end
+	end
+	if Leg == "Left" and game:GetService("Players").LocalPlayer.Character ~= nil and game:GetService("Players").LocalPlayer.Character.Humanoid.RigType == Enum.HumanoidRigType.R6 then
+		if (workspace.TPSSystem.TPS.Position - game.Players.LocalPlayer.Character:WaitForChild("Left Leg").Position).Magnitude <= Reach then
+			firetouchinterest(workspace.TPSSystem.TPS, game.Players.LocalPlayer.Character:WaitForChild("Left Leg"), 0)
+			firetouchinterest(workspace.TPSSystem.TPS, game.Players.LocalPlayer.Character:WaitForChild("Left Leg"), 1)
+		end
+	end
+end)   
+      end    
+})
+
+-- Bunun gibi
+
+Tab:AddButton({
+    Name = "4.7 studs",
+    Callback = function()
+              
+ getgenv().Leg = "Right" -- Left or Right
+getgenv().Reach = 4.7 -- Change to whatever you want (The game caps it)
+
+game["RunService"].Stepped:Connect(function()
+	if Leg == "Left" and game:GetService("Players").LocalPlayer.Character ~= nil and game:GetService("Players").LocalPlayer.Character.Humanoid.RigType == Enum.HumanoidRigType.R15 then
+		if (workspace.TPSSystem.TPS.Position - game.Players.LocalPlayer.Character:WaitForChild("LeftLowerLeg").Position).Magnitude <= Reach then
+			firetouchinterest(workspace.TPSSystem.TPS, game.Players.LocalPlayer.Character:WaitForChild("LeftLowerLeg"), 0)
+			firetouchinterest(workspace.TPSSystem.TPS, game.Players.LocalPlayer.Character:WaitForChild("LeftLowerLeg"), 1)
+		end
+	end
+	if Leg == "Right" and game:GetService("Players").LocalPlayer.Character ~= nil and game:GetService("Players").LocalPlayer.Character.Humanoid.RigType == Enum.HumanoidRigType.R15 then
+		if (workspace.TPSSystem.TPS.Position - game.Players.LocalPlayer.Character:WaitForChild("RightLowerLeg").Position).Magnitude <= Reach then
+			firetouchinterest(workspace.TPSSystem.TPS, game.Players.LocalPlayer.Character:WaitForChild("RightLowerLeg"), 0)
+			firetouchinterest(workspace.TPSSystem.TPS, game.Players.LocalPlayer.Character:WaitForChild("RightLowerLeg"), 1)
+		end
+	end
+	if Leg == "Right" and game:GetService("Players").LocalPlayer.Character ~= nil and game:GetService("Players").LocalPlayer.Character.Humanoid.RigType == Enum.HumanoidRigType.R6 then
+		if (workspace.TPSSystem.TPS.Position - game.Players.LocalPlayer.Character:WaitForChild("Right Leg").Position).Magnitude <= Reach then
+			firetouchinterest(workspace.TPSSystem.TPS, game.Players.LocalPlayer.Character:WaitForChild("Right Leg"), 0)
+			firetouchinterest(workspace.TPSSystem.TPS, game.Players.LocalPlayer.Character:WaitForChild("Right Leg"), 1)
+		end
+	end
+	if Leg == "Left" and game:GetService("Players").LocalPlayer.Character ~= nil and game:GetService("Players").LocalPlayer.Character.Humanoid.RigType == Enum.HumanoidRigType.R6 then
+		if (workspace.TPSSystem.TPS.Position - game.Players.LocalPlayer.Character:WaitForChild("Left Leg").Position).Magnitude <= Reach then
+			firetouchinterest(workspace.TPSSystem.TPS, game.Players.LocalPlayer.Character:WaitForChild("Left Leg"), 0)
+			firetouchinterest(workspace.TPSSystem.TPS, game.Players.LocalPlayer.Character:WaitForChild("Left Leg"), 1)
+		end
+	end
+end)   
+      end    
+})
+
+-- Bunun gibi
+
+Tab:AddButton({
+    Name = "6.6 studs",
+    Callback = function()
+              
+ getgenv().Leg = "Right" -- Left or Right
+getgenv().Reach = 6.5 -- Change to whatever you want (The game caps it)
+
+game["RunService"].Stepped:Connect(function()
+	if Leg == "Left" and game:GetService("Players").LocalPlayer.Character ~= nil and game:GetService("Players").LocalPlayer.Character.Humanoid.RigType == Enum.HumanoidRigType.R15 then
+		if (workspace.TPSSystem.TPS.Position - game.Players.LocalPlayer.Character:WaitForChild("LeftLowerLeg").Position).Magnitude <= Reach then
+			firetouchinterest(workspace.TPSSystem.TPS, game.Players.LocalPlayer.Character:WaitForChild("LeftLowerLeg"), 0)
+			firetouchinterest(workspace.TPSSystem.TPS, game.Players.LocalPlayer.Character:WaitForChild("LeftLowerLeg"), 1)
+		end
+	end
+	if Leg == "Right" and game:GetService("Players").LocalPlayer.Character ~= nil and game:GetService("Players").LocalPlayer.Character.Humanoid.RigType == Enum.HumanoidRigType.R15 then
+		if (workspace.TPSSystem.TPS.Position - game.Players.LocalPlayer.Character:WaitForChild("RightLowerLeg").Position).Magnitude <= Reach then
+			firetouchinterest(workspace.TPSSystem.TPS, game.Players.LocalPlayer.Character:WaitForChild("RightLowerLeg"), 0)
+			firetouchinterest(workspace.TPSSystem.TPS, game.Players.LocalPlayer.Character:WaitForChild("RightLowerLeg"), 1)
+		end
+	end
+	if Leg == "Right" and game:GetService("Players").LocalPlayer.Character ~= nil and game:GetService("Players").LocalPlayer.Character.Humanoid.RigType == Enum.HumanoidRigType.R6 then
+		if (workspace.TPSSystem.TPS.Position - game.Players.LocalPlayer.Character:WaitForChild("Right Leg").Position).Magnitude <= Reach then
+			firetouchinterest(workspace.TPSSystem.TPS, game.Players.LocalPlayer.Character:WaitForChild("Right Leg"), 0)
+			firetouchinterest(workspace.TPSSystem.TPS, game.Players.LocalPlayer.Character:WaitForChild("Right Leg"), 1)
+		end
+	end
+	if Leg == "Left" and game:GetService("Players").LocalPlayer.Character ~= nil and game:GetService("Players").LocalPlayer.Character.Humanoid.RigType == Enum.HumanoidRigType.R6 then
+		if (workspace.TPSSystem.TPS.Position - game.Players.LocalPlayer.Character:WaitForChild("Left Leg").Position).Magnitude <= Reach then
+			firetouchinterest(workspace.TPSSystem.TPS, game.Players.LocalPlayer.Character:WaitForChild("Left Leg"), 0)
+			firetouchinterest(workspace.TPSSystem.TPS, game.Players.LocalPlayer.Character:WaitForChild("Left Leg"), 1)
+		end
+	end
+end)   
+      end    
+})
+
+-- Bunun gibi
+
+Tab:AddButton({
+    Name = "6 studs (better at gk)",
+    Callback = function()
+              
+ getgenv().Leg = "Right" -- Left or Right
+getgenv().Reach = 6 -- Change to whatever you want (The game caps it)
+
+game["RunService"].Stepped:Connect(function()
+	if Leg == "Left" and game:GetService("Players").LocalPlayer.Character ~= nil and game:GetService("Players").LocalPlayer.Character.Humanoid.RigType == Enum.HumanoidRigType.R15 then
+		if (workspace.TPSSystem.TPS.Position - game.Players.LocalPlayer.Character:WaitForChild("LeftLowerLeg").Position).Magnitude <= Reach then
+			firetouchinterest(workspace.TPSSystem.TPS, game.Players.LocalPlayer.Character:WaitForChild("LeftLowerLeg"), 0)
+			firetouchinterest(workspace.TPSSystem.TPS, game.Players.LocalPlayer.Character:WaitForChild("LeftLowerLeg"), 1)
+		end
+	end
+	if Leg == "Right" and game:GetService("Players").LocalPlayer.Character ~= nil and game:GetService("Players").LocalPlayer.Character.Humanoid.RigType == Enum.HumanoidRigType.R15 then
+		if (workspace.TPSSystem.TPS.Position - game.Players.LocalPlayer.Character:WaitForChild("RightLowerLeg").Position).Magnitude <= Reach then
+			firetouchinterest(workspace.TPSSystem.TPS, game.Players.LocalPlayer.Character:WaitForChild("RightLowerLeg"), 0)
+			firetouchinterest(workspace.TPSSystem.TPS, game.Players.LocalPlayer.Character:WaitForChild("RightLowerLeg"), 1)
+		end
+	end
+	if Leg == "Right" and game:GetService("Players").LocalPlayer.Character ~= nil and game:GetService("Players").LocalPlayer.Character.Humanoid.RigType == Enum.HumanoidRigType.R6 then
+		if (workspace.TPSSystem.TPS.Position - game.Players.LocalPlayer.Character:WaitForChild("Right Leg").Position).Magnitude <= Reach then
+			firetouchinterest(workspace.TPSSystem.TPS, game.Players.LocalPlayer.Character:WaitForChild("Right Leg"), 0)
+			firetouchinterest(workspace.TPSSystem.TPS, game.Players.LocalPlayer.Character:WaitForChild("Right Leg"), 1)
+		end
+	end
+	if Leg == "Left" and game:GetService("Players").LocalPlayer.Character ~= nil and game:GetService("Players").LocalPlayer.Character.Humanoid.RigType == Enum.HumanoidRigType.R6 then
+		if (workspace.TPSSystem.TPS.Position - game.Players.LocalPlayer.Character:WaitForChild("Left Leg").Position).Magnitude <= Reach then
+			firetouchinterest(workspace.TPSSystem.TPS, game.Players.LocalPlayer.Character:WaitForChild("Left Leg"), 0)
+			firetouchinterest(workspace.TPSSystem.TPS, game.Players.LocalPlayer.Character:WaitForChild("Left Leg"), 1)
+		end
+	end
+end)   
+      end    
+})
+
+-- Bunun gibi
+
+Tab:AddButton({
+    Name = "7.9 studs",
+    Callback = function()
+              
+ getgenv().Leg = "Right" -- Left or Right
+getgenv().Reach = 7.9 -- Change to whatever you want (The game caps it)
+
+game["RunService"].Stepped:Connect(function()
+	if Leg == "Left" and game:GetService("Players").LocalPlayer.Character ~= nil and game:GetService("Players").LocalPlayer.Character.Humanoid.RigType == Enum.HumanoidRigType.R15 then
+		if (workspace.TPSSystem.TPS.Position - game.Players.LocalPlayer.Character:WaitForChild("LeftLowerLeg").Position).Magnitude <= Reach then
+			firetouchinterest(workspace.TPSSystem.TPS, game.Players.LocalPlayer.Character:WaitForChild("LeftLowerLeg"), 0)
+			firetouchinterest(workspace.TPSSystem.TPS, game.Players.LocalPlayer.Character:WaitForChild("LeftLowerLeg"), 1)
+		end
+	end
+	if Leg == "Right" and game:GetService("Players").LocalPlayer.Character ~= nil and game:GetService("Players").LocalPlayer.Character.Humanoid.RigType == Enum.HumanoidRigType.R15 then
+		if (workspace.TPSSystem.TPS.Position - game.Players.LocalPlayer.Character:WaitForChild("RightLowerLeg").Position).Magnitude <= Reach then
+			firetouchinterest(workspace.TPSSystem.TPS, game.Players.LocalPlayer.Character:WaitForChild("RightLowerLeg"), 0)
+			firetouchinterest(workspace.TPSSystem.TPS, game.Players.LocalPlayer.Character:WaitForChild("RightLowerLeg"), 1)
+		end
+	end
+	if Leg == "Right" and game:GetService("Players").LocalPlayer.Character ~= nil and game:GetService("Players").LocalPlayer.Character.Humanoid.RigType == Enum.HumanoidRigType.R6 then
+		if (workspace.TPSSystem.TPS.Position - game.Players.LocalPlayer.Character:WaitForChild("Right Leg").Position).Magnitude <= Reach then
+			firetouchinterest(workspace.TPSSystem.TPS, game.Players.LocalPlayer.Character:WaitForChild("Right Leg"), 0)
+			firetouchinterest(workspace.TPSSystem.TPS, game.Players.LocalPlayer.Character:WaitForChild("Right Leg"), 1)
+		end
+	end
+	if Leg == "Left" and game:GetService("Players").LocalPlayer.Character ~= nil and game:GetService("Players").LocalPlayer.Character.Humanoid.RigType == Enum.HumanoidRigType.R6 then
+		if (workspace.TPSSystem.TPS.Position - game.Players.LocalPlayer.Character:WaitForChild("Left Leg").Position).Magnitude <= Reach then
+			firetouchinterest(workspace.TPSSystem.TPS, game.Players.LocalPlayer.Character:WaitForChild("Left Leg"), 0)
+			firetouchinterest(workspace.TPSSystem.TPS, game.Players.LocalPlayer.Character:WaitForChild("Left Leg"), 1)
+		end
+	end
+end)   
+      end    
+})
+
+-- Bunun gibi
+
+Tab:AddButton({
+    Name = "7 studs",
+    Callback = function()
+              
+ getgenv().Leg = "Right" -- Left or Right
+getgenv().Reach = 7 -- Change to whatever you want (The game caps it)
+
+game["RunService"].Stepped:Connect(function()
+	if Leg == "Left" and game:GetService("Players").LocalPlayer.Character ~= nil and game:GetService("Players").LocalPlayer.Character.Humanoid.RigType == Enum.HumanoidRigType.R15 then
+		if (workspace.TPSSystem.TPS.Position - game.Players.LocalPlayer.Character:WaitForChild("LeftLowerLeg").Position).Magnitude <= Reach then
+			firetouchinterest(workspace.TPSSystem.TPS, game.Players.LocalPlayer.Character:WaitForChild("LeftLowerLeg"), 0)
+			firetouchinterest(workspace.TPSSystem.TPS, game.Players.LocalPlayer.Character:WaitForChild("LeftLowerLeg"), 1)
+		end
+	end
+	if Leg == "Right" and game:GetService("Players").LocalPlayer.Character ~= nil and game:GetService("Players").LocalPlayer.Character.Humanoid.RigType == Enum.HumanoidRigType.R15 then
+		if (workspace.TPSSystem.TPS.Position - game.Players.LocalPlayer.Character:WaitForChild("RightLowerLeg").Position).Magnitude <= Reach then
+			firetouchinterest(workspace.TPSSystem.TPS, game.Players.LocalPlayer.Character:WaitForChild("RightLowerLeg"), 0)
+			firetouchinterest(workspace.TPSSystem.TPS, game.Players.LocalPlayer.Character:WaitForChild("RightLowerLeg"), 1)
+		end
+	end
+	if Leg == "Right" and game:GetService("Players").LocalPlayer.Character ~= nil and game:GetService("Players").LocalPlayer.Character.Humanoid.RigType == Enum.HumanoidRigType.R6 then
+		if (workspace.TPSSystem.TPS.Position - game.Players.LocalPlayer.Character:WaitForChild("Right Leg").Position).Magnitude <= Reach then
+			firetouchinterest(workspace.TPSSystem.TPS, game.Players.LocalPlayer.Character:WaitForChild("Right Leg"), 0)
+			firetouchinterest(workspace.TPSSystem.TPS, game.Players.LocalPlayer.Character:WaitForChild("Right Leg"), 1)
+		end
+	end
+	if Leg == "Left" and game:GetService("Players").LocalPlayer.Character ~= nil and game:GetService("Players").LocalPlayer.Character.Humanoid.RigType == Enum.HumanoidRigType.R6 then
+		if (workspace.TPSSystem.TPS.Position - game.Players.LocalPlayer.Character:WaitForChild("Left Leg").Position).Magnitude <= Reach then
+			firetouchinterest(workspace.TPSSystem.TPS, game.Players.LocalPlayer.Character:WaitForChild("Left Leg"), 0)
+			firetouchinterest(workspace.TPSSystem.TPS, game.Players.LocalPlayer.Character:WaitForChild("Left Leg"), 1)
+		end
+	end
+end)   
+      end    
+})
+
+-- Bunun gibi
+
+Tab:AddButton({
+    Name = "8.5 studs",
+    Callback = function()
+              
+ getgenv().Leg = "Right" -- Left or Right
+getgenv().Reach = 8.5 -- Change to whatever you want (The game caps it)
+
+game["RunService"].Stepped:Connect(function()
+	if Leg == "Left" and game:GetService("Players").LocalPlayer.Character ~= nil and game:GetService("Players").LocalPlayer.Character.Humanoid.RigType == Enum.HumanoidRigType.R15 then
+		if (workspace.TPSSystem.TPS.Position - game.Players.LocalPlayer.Character:WaitForChild("LeftLowerLeg").Position).Magnitude <= Reach then
+			firetouchinterest(workspace.TPSSystem.TPS, game.Players.LocalPlayer.Character:WaitForChild("LeftLowerLeg"), 0)
+			firetouchinterest(workspace.TPSSystem.TPS, game.Players.LocalPlayer.Character:WaitForChild("LeftLowerLeg"), 1)
+		end
+	end
+	if Leg == "Right" and game:GetService("Players").LocalPlayer.Character ~= nil and game:GetService("Players").LocalPlayer.Character.Humanoid.RigType == Enum.HumanoidRigType.R15 then
+		if (workspace.TPSSystem.TPS.Position - game.Players.LocalPlayer.Character:WaitForChild("RightLowerLeg").Position).Magnitude <= Reach then
+			firetouchinterest(workspace.TPSSystem.TPS, game.Players.LocalPlayer.Character:WaitForChild("RightLowerLeg"), 0)
+			firetouchinterest(workspace.TPSSystem.TPS, game.Players.LocalPlayer.Character:WaitForChild("RightLowerLeg"), 1)
+		end
+	end
+	if Leg == "Right" and game:GetService("Players").LocalPlayer.Character ~= nil and game:GetService("Players").LocalPlayer.Character.Humanoid.RigType == Enum.HumanoidRigType.R6 then
+		if (workspace.TPSSystem.TPS.Position - game.Players.LocalPlayer.Character:WaitForChild("Right Leg").Position).Magnitude <= Reach then
+			firetouchinterest(workspace.TPSSystem.TPS, game.Players.LocalPlayer.Character:WaitForChild("Right Leg"), 0)
+			firetouchinterest(workspace.TPSSystem.TPS, game.Players.LocalPlayer.Character:WaitForChild("Right Leg"), 1)
+		end
+	end
+	if Leg == "Left" and game:GetService("Players").LocalPlayer.Character ~= nil and game:GetService("Players").LocalPlayer.Character.Humanoid.RigType == Enum.HumanoidRigType.R6 then
+		if (workspace.TPSSystem.TPS.Position - game.Players.LocalPlayer.Character:WaitForChild("Left Leg").Position).Magnitude <= Reach then
+			firetouchinterest(workspace.TPSSystem.TPS, game.Players.LocalPlayer.Character:WaitForChild("Left Leg"), 0)
+			firetouchinterest(workspace.TPSSystem.TPS, game.Players.LocalPlayer.Character:WaitForChild("Left Leg"), 1)
+		end
+	end
+end)   
+      end    
+})
+
+-- Bunun gibi
+
+Tab:AddButton({
+    Name = "8 studs",
+    Callback = function()
+              
+ getgenv().Leg = "Right" -- Left or Right
+getgenv().Reach = 8 -- Change to whatever you want (The game caps it)
+
+game["RunService"].Stepped:Connect(function()
+	if Leg == "Left" and game:GetService("Players").LocalPlayer.Character ~= nil and game:GetService("Players").LocalPlayer.Character.Humanoid.RigType == Enum.HumanoidRigType.R15 then
+		if (workspace.TPSSystem.TPS.Position - game.Players.LocalPlayer.Character:WaitForChild("LeftLowerLeg").Position).Magnitude <= Reach then
+			firetouchinterest(workspace.TPSSystem.TPS, game.Players.LocalPlayer.Character:WaitForChild("LeftLowerLeg"), 0)
+			firetouchinterest(workspace.TPSSystem.TPS, game.Players.LocalPlayer.Character:WaitForChild("LeftLowerLeg"), 1)
+		end
+	end
+	if Leg == "Right" and game:GetService("Players").LocalPlayer.Character ~= nil and game:GetService("Players").LocalPlayer.Character.Humanoid.RigType == Enum.HumanoidRigType.R15 then
+		if (workspace.TPSSystem.TPS.Position - game.Players.LocalPlayer.Character:WaitForChild("RightLowerLeg").Position).Magnitude <= Reach then
+			firetouchinterest(workspace.TPSSystem.TPS, game.Players.LocalPlayer.Character:WaitForChild("RightLowerLeg"), 0)
+			firetouchinterest(workspace.TPSSystem.TPS, game.Players.LocalPlayer.Character:WaitForChild("RightLowerLeg"), 1)
+		end
+	end
+	if Leg == "Right" and game:GetService("Players").LocalPlayer.Character ~= nil and game:GetService("Players").LocalPlayer.Character.Humanoid.RigType == Enum.HumanoidRigType.R6 then
+		if (workspace.TPSSystem.TPS.Position - game.Players.LocalPlayer.Character:WaitForChild("Right Leg").Position).Magnitude <= Reach then
+			firetouchinterest(workspace.TPSSystem.TPS, game.Players.LocalPlayer.Character:WaitForChild("Right Leg"), 0)
+			firetouchinterest(workspace.TPSSystem.TPS, game.Players.LocalPlayer.Character:WaitForChild("Right Leg"), 1)
+		end
+	end
+	if Leg == "Left" and game:GetService("Players").LocalPlayer.Character ~= nil and game:GetService("Players").LocalPlayer.Character.Humanoid.RigType == Enum.HumanoidRigType.R6 then
+		if (workspace.TPSSystem.TPS.Position - game.Players.LocalPlayer.Character:WaitForChild("Left Leg").Position).Magnitude <= Reach then
+			firetouchinterest(workspace.TPSSystem.TPS, game.Players.LocalPlayer.Character:WaitForChild("Left Leg"), 0)
+			firetouchinterest(workspace.TPSSystem.TPS, game.Players.LocalPlayer.Character:WaitForChild("Left Leg"), 1)
+		end
+	end
+end)   
+      end    
+})
+
+-- Bunun gibi
+
+Tab:AddButton({
+    Name = "9.7 studs",
+    Callback = function()
+              
+ getgenv().Leg = "Right" -- Left or Right
+getgenv().Reach = 9.7 -- Change to whatever you want (The game caps it)
+
+game["RunService"].Stepped:Connect(function()
+	if Leg == "Left" and game:GetService("Players").LocalPlayer.Character ~= nil and game:GetService("Players").LocalPlayer.Character.Humanoid.RigType == Enum.HumanoidRigType.R15 then
+		if (workspace.TPSSystem.TPS.Position - game.Players.LocalPlayer.Character:WaitForChild("LeftLowerLeg").Position).Magnitude <= Reach then
+			firetouchinterest(workspace.TPSSystem.TPS, game.Players.LocalPlayer.Character:WaitForChild("LeftLowerLeg"), 0)
+			firetouchinterest(workspace.TPSSystem.TPS, game.Players.LocalPlayer.Character:WaitForChild("LeftLowerLeg"), 1)
+		end
+	end
+	if Leg == "Right" and game:GetService("Players").LocalPlayer.Character ~= nil and game:GetService("Players").LocalPlayer.Character.Humanoid.RigType == Enum.HumanoidRigType.R15 then
+		if (workspace.TPSSystem.TPS.Position - game.Players.LocalPlayer.Character:WaitForChild("RightLowerLeg").Position).Magnitude <= Reach then
+			firetouchinterest(workspace.TPSSystem.TPS, game.Players.LocalPlayer.Character:WaitForChild("RightLowerLeg"), 0)
+			firetouchinterest(workspace.TPSSystem.TPS, game.Players.LocalPlayer.Character:WaitForChild("RightLowerLeg"), 1)
+		end
+	end
+	if Leg == "Right" and game:GetService("Players").LocalPlayer.Character ~= nil and game:GetService("Players").LocalPlayer.Character.Humanoid.RigType == Enum.HumanoidRigType.R6 then
+		if (workspace.TPSSystem.TPS.Position - game.Players.LocalPlayer.Character:WaitForChild("Right Leg").Position).Magnitude <= Reach then
+			firetouchinterest(workspace.TPSSystem.TPS, game.Players.LocalPlayer.Character:WaitForChild("Right Leg"), 0)
+			firetouchinterest(workspace.TPSSystem.TPS, game.Players.LocalPlayer.Character:WaitForChild("Right Leg"), 1)
+		end
+	end
+	if Leg == "Left" and game:GetService("Players").LocalPlayer.Character ~= nil and game:GetService("Players").LocalPlayer.Character.Humanoid.RigType == Enum.HumanoidRigType.R6 then
+		if (workspace.TPSSystem.TPS.Position - game.Players.LocalPlayer.Character:WaitForChild("Left Leg").Position).Magnitude <= Reach then
+			firetouchinterest(workspace.TPSSystem.TPS, game.Players.LocalPlayer.Character:WaitForChild("Left Leg"), 0)
+			firetouchinterest(workspace.TPSSystem.TPS, game.Players.LocalPlayer.Character:WaitForChild("Left Leg"), 1)
+		end
+	end
+end)   
+      end    
+})
+
+-- Bunun gibi
+
+Tab:AddButton({
+    Name = "9 studs",
+    Callback = function()
+              
+ getgenv().Leg = "Right" -- Left or Right
+getgenv().Reach = 9 -- Change to whatever you want (The game caps it)
+
+game["RunService"].Stepped:Connect(function()
+	if Leg == "Left" and game:GetService("Players").LocalPlayer.Character ~= nil and game:GetService("Players").LocalPlayer.Character.Humanoid.RigType == Enum.HumanoidRigType.R15 then
+		if (workspace.TPSSystem.TPS.Position - game.Players.LocalPlayer.Character:WaitForChild("LeftLowerLeg").Position).Magnitude <= Reach then
+			firetouchinterest(workspace.TPSSystem.TPS, game.Players.LocalPlayer.Character:WaitForChild("LeftLowerLeg"), 0)
+			firetouchinterest(workspace.TPSSystem.TPS, game.Players.LocalPlayer.Character:WaitForChild("LeftLowerLeg"), 1)
+		end
+	end
+	if Leg == "Right" and game:GetService("Players").LocalPlayer.Character ~= nil and game:GetService("Players").LocalPlayer.Character.Humanoid.RigType == Enum.HumanoidRigType.R15 then
+		if (workspace.TPSSystem.TPS.Position - game.Players.LocalPlayer.Character:WaitForChild("RightLowerLeg").Position).Magnitude <= Reach then
+			firetouchinterest(workspace.TPSSystem.TPS, game.Players.LocalPlayer.Character:WaitForChild("RightLowerLeg"), 0)
+			firetouchinterest(workspace.TPSSystem.TPS, game.Players.LocalPlayer.Character:WaitForChild("RightLowerLeg"), 1)
+		end
+	end
+	if Leg == "Right" and game:GetService("Players").LocalPlayer.Character ~= nil and game:GetService("Players").LocalPlayer.Character.Humanoid.RigType == Enum.HumanoidRigType.R6 then
+		if (workspace.TPSSystem.TPS.Position - game.Players.LocalPlayer.Character:WaitForChild("Right Leg").Position).Magnitude <= Reach then
+			firetouchinterest(workspace.TPSSystem.TPS, game.Players.LocalPlayer.Character:WaitForChild("Right Leg"), 0)
+			firetouchinterest(workspace.TPSSystem.TPS, game.Players.LocalPlayer.Character:WaitForChild("Right Leg"), 1)
+		end
+	end
+	if Leg == "Left" and game:GetService("Players").LocalPlayer.Character ~= nil and game:GetService("Players").LocalPlayer.Character.Humanoid.RigType == Enum.HumanoidRigType.R6 then
+		if (workspace.TPSSystem.TPS.Position - game.Players.LocalPlayer.Character:WaitForChild("Left Leg").Position).Magnitude <= Reach then
+			firetouchinterest(workspace.TPSSystem.TPS, game.Players.LocalPlayer.Character:WaitForChild("Left Leg"), 0)
+			firetouchinterest(workspace.TPSSystem.TPS, game.Players.LocalPlayer.Character:WaitForChild("Left Leg"), 1)
+		end
+	end
+end)   
+      end    
+})
+
+-- Bunun gibi
+
+Tab:AddButton({
+    Name = "10.8 studs",
+    Callback = function()
+              
+ getgenv().Leg = "Right" -- Left or Right
+getgenv().Reach = 10.8 -- Change to whatever you want (The game caps it)
+
+game["RunService"].Stepped:Connect(function()
+	if Leg == "Left" and game:GetService("Players").LocalPlayer.Character ~= nil and game:GetService("Players").LocalPlayer.Character.Humanoid.RigType == Enum.HumanoidRigType.R15 then
+		if (workspace.TPSSystem.TPS.Position - game.Players.LocalPlayer.Character:WaitForChild("LeftLowerLeg").Position).Magnitude <= Reach then
+			firetouchinterest(workspace.TPSSystem.TPS, game.Players.LocalPlayer.Character:WaitForChild("LeftLowerLeg"), 0)
+			firetouchinterest(workspace.TPSSystem.TPS, game.Players.LocalPlayer.Character:WaitForChild("LeftLowerLeg"), 1)
+		end
+	end
+	if Leg == "Right" and game:GetService("Players").LocalPlayer.Character ~= nil and game:GetService("Players").LocalPlayer.Character.Humanoid.RigType == Enum.HumanoidRigType.R15 then
+		if (workspace.TPSSystem.TPS.Position - game.Players.LocalPlayer.Character:WaitForChild("RightLowerLeg").Position).Magnitude <= Reach then
+			firetouchinterest(workspace.TPSSystem.TPS, game.Players.LocalPlayer.Character:WaitForChild("RightLowerLeg"), 0)
+			firetouchinterest(workspace.TPSSystem.TPS, game.Players.LocalPlayer.Character:WaitForChild("RightLowerLeg"), 1)
+		end
+	end
+	if Leg == "Right" and game:GetService("Players").LocalPlayer.Character ~= nil and game:GetService("Players").LocalPlayer.Character.Humanoid.RigType == Enum.HumanoidRigType.R6 then
+		if (workspace.TPSSystem.TPS.Position - game.Players.LocalPlayer.Character:WaitForChild("Right Leg").Position).Magnitude <= Reach then
+			firetouchinterest(workspace.TPSSystem.TPS, game.Players.LocalPlayer.Character:WaitForChild("Right Leg"), 0)
+			firetouchinterest(workspace.TPSSystem.TPS, game.Players.LocalPlayer.Character:WaitForChild("Right Leg"), 1)
+		end
+	end
+	if Leg == "Left" and game:GetService("Players").LocalPlayer.Character ~= nil and game:GetService("Players").LocalPlayer.Character.Humanoid.RigType == Enum.HumanoidRigType.R6 then
+		if (workspace.TPSSystem.TPS.Position - game.Players.LocalPlayer.Character:WaitForChild("Left Leg").Position).Magnitude <= Reach then
+			firetouchinterest(workspace.TPSSystem.TPS, game.Players.LocalPlayer.Character:WaitForChild("Left Leg"), 0)
+			firetouchinterest(workspace.TPSSystem.TPS, game.Players.LocalPlayer.Character:WaitForChild("Left Leg"), 1)
+		end
+	end
+end)   
+      end    
+})
+
+-- Bunun gibi
+
+Tab:AddButton({
+    Name = "10 studs",
+    Callback = function()
+              
+ getgenv().Leg = "Right" -- Left or Right
+getgenv().Reach = 10 -- Change to whatever you want (The game caps it)
+
+game["RunService"].Stepped:Connect(function()
+	if Leg == "Left" and game:GetService("Players").LocalPlayer.Character ~= nil and game:GetService("Players").LocalPlayer.Character.Humanoid.RigType == Enum.HumanoidRigType.R15 then
+		if (workspace.TPSSystem.TPS.Position - game.Players.LocalPlayer.Character:WaitForChild("LeftLowerLeg").Position).Magnitude <= Reach then
+			firetouchinterest(workspace.TPSSystem.TPS, game.Players.LocalPlayer.Character:WaitForChild("LeftLowerLeg"), 0)
+			firetouchinterest(workspace.TPSSystem.TPS, game.Players.LocalPlayer.Character:WaitForChild("LeftLowerLeg"), 1)
+		end
+	end
+	if Leg == "Right" and game:GetService("Players").LocalPlayer.Character ~= nil and game:GetService("Players").LocalPlayer.Character.Humanoid.RigType == Enum.HumanoidRigType.R15 then
+		if (workspace.TPSSystem.TPS.Position - game.Players.LocalPlayer.Character:WaitForChild("RightLowerLeg").Position).Magnitude <= Reach then
+			firetouchinterest(workspace.TPSSystem.TPS, game.Players.LocalPlayer.Character:WaitForChild("RightLowerLeg"), 0)
+			firetouchinterest(workspace.TPSSystem.TPS, game.Players.LocalPlayer.Character:WaitForChild("RightLowerLeg"), 1)
+		end
+	end
+	if Leg == "Right" and game:GetService("Players").LocalPlayer.Character ~= nil and game:GetService("Players").LocalPlayer.Character.Humanoid.RigType == Enum.HumanoidRigType.R6 then
+		if (workspace.TPSSystem.TPS.Position - game.Players.LocalPlayer.Character:WaitForChild("Right Leg").Position).Magnitude <= Reach then
+			firetouchinterest(workspace.TPSSystem.TPS, game.Players.LocalPlayer.Character:WaitForChild("Right Leg"), 0)
+			firetouchinterest(workspace.TPSSystem.TPS, game.Players.LocalPlayer.Character:WaitForChild("Right Leg"), 1)
+		end
+	end
+	if Leg == "Left" and game:GetService("Players").LocalPlayer.Character ~= nil and game:GetService("Players").LocalPlayer.Character.Humanoid.RigType == Enum.HumanoidRigType.R6 then
+		if (workspace.TPSSystem.TPS.Position - game.Players.LocalPlayer.Character:WaitForChild("Left Leg").Position).Magnitude <= Reach then
+			firetouchinterest(workspace.TPSSystem.TPS, game.Players.LocalPlayer.Character:WaitForChild("Left Leg"), 0)
+			firetouchinterest(workspace.TPSSystem.TPS, game.Players.LocalPlayer.Character:WaitForChild("Left Leg"), 1)
+		end
+	end
+end)   
+      end    
+})
+
+-- Bunun gibi
+
+Tab:AddButton({
+    Name = "20.8 studs (like hussian reach)",
+    Callback = function()
+              
+ getgenv().Leg = "Right" -- Left or Right
+getgenv().Reach = 20.8 -- Change to whatever you want (The game caps it)
+
+game["RunService"].Stepped:Connect(function()
+	if Leg == "Left" and game:GetService("Players").LocalPlayer.Character ~= nil and game:GetService("Players").LocalPlayer.Character.Humanoid.RigType == Enum.HumanoidRigType.R15 then
+		if (workspace.TPSSystem.TPS.Position - game.Players.LocalPlayer.Character:WaitForChild("LeftLowerLeg").Position).Magnitude <= Reach then
+			firetouchinterest(workspace.TPSSystem.TPS, game.Players.LocalPlayer.Character:WaitForChild("LeftLowerLeg"), 0)
+			firetouchinterest(workspace.TPSSystem.TPS, game.Players.LocalPlayer.Character:WaitForChild("LeftLowerLeg"), 1)
+		end
+	end
+	if Leg == "Right" and game:GetService("Players").LocalPlayer.Character ~= nil and game:GetService("Players").LocalPlayer.Character.Humanoid.RigType == Enum.HumanoidRigType.R15 then
+		if (workspace.TPSSystem.TPS.Position - game.Players.LocalPlayer.Character:WaitForChild("RightLowerLeg").Position).Magnitude <= Reach then
+			firetouchinterest(workspace.TPSSystem.TPS, game.Players.LocalPlayer.Character:WaitForChild("RightLowerLeg"), 0)
+			firetouchinterest(workspace.TPSSystem.TPS, game.Players.LocalPlayer.Character:WaitForChild("RightLowerLeg"), 1)
+		end
+	end
+	if Leg == "Right" and game:GetService("Players").LocalPlayer.Character ~= nil and game:GetService("Players").LocalPlayer.Character.Humanoid.RigType == Enum.HumanoidRigType.R6 then
+		if (workspace.TPSSystem.TPS.Position - game.Players.LocalPlayer.Character:WaitForChild("Right Leg").Position).Magnitude <= Reach then
+			firetouchinterest(workspace.TPSSystem.TPS, game.Players.LocalPlayer.Character:WaitForChild("Right Leg"), 0)
+			firetouchinterest(workspace.TPSSystem.TPS, game.Players.LocalPlayer.Character:WaitForChild("Right Leg"), 1)
+		end
+	end
+	if Leg == "Left" and game:GetService("Players").LocalPlayer.Character ~= nil and game:GetService("Players").LocalPlayer.Character.Humanoid.RigType == Enum.HumanoidRigType.R6 then
+		if (workspace.TPSSystem.TPS.Position - game.Players.LocalPlayer.Character:WaitForChild("Left Leg").Position).Magnitude <= Reach then
+			firetouchinterest(workspace.TPSSystem.TPS, game.Players.LocalPlayer.Character:WaitForChild("Left Leg"), 0)
+			firetouchinterest(workspace.TPSSystem.TPS, game.Players.LocalPlayer.Character:WaitForChild("Left Leg"), 1)
+		end
+	end
+end)   
+      end    
+})
+
+-- Bunun gibi
+
+Tab:AddButton({
+    Name = "20 studs",
+    Callback = function()
+              
+ getgenv().Leg = "Right" -- Left or Right
+getgenv().Reach = 20 -- Change to whatever you want (The game caps it)
+
+game["RunService"].Stepped:Connect(function()
+	if Leg == "Left" and game:GetService("Players").LocalPlayer.Character ~= nil and game:GetService("Players").LocalPlayer.Character.Humanoid.RigType == Enum.HumanoidRigType.R15 then
+		if (workspace.TPSSystem.TPS.Position - game.Players.LocalPlayer.Character:WaitForChild("LeftLowerLeg").Position).Magnitude <= Reach then
+			firetouchinterest(workspace.TPSSystem.TPS, game.Players.LocalPlayer.Character:WaitForChild("LeftLowerLeg"), 0)
+			firetouchinterest(workspace.TPSSystem.TPS, game.Players.LocalPlayer.Character:WaitForChild("LeftLowerLeg"), 1)
+		end
+	end
+	if Leg == "Right" and game:GetService("Players").LocalPlayer.Character ~= nil and game:GetService("Players").LocalPlayer.Character.Humanoid.RigType == Enum.HumanoidRigType.R15 then
+		if (workspace.TPSSystem.TPS.Position - game.Players.LocalPlayer.Character:WaitForChild("RightLowerLeg").Position).Magnitude <= Reach then
+			firetouchinterest(workspace.TPSSystem.TPS, game.Players.LocalPlayer.Character:WaitForChild("RightLowerLeg"), 0)
+			firetouchinterest(workspace.TPSSystem.TPS, game.Players.LocalPlayer.Character:WaitForChild("RightLowerLeg"), 1)
+		end
+	end
+	if Leg == "Right" and game:GetService("Players").LocalPlayer.Character ~= nil and game:GetService("Players").LocalPlayer.Character.Humanoid.RigType == Enum.HumanoidRigType.R6 then
+		if (workspace.TPSSystem.TPS.Position - game.Players.LocalPlayer.Character:WaitForChild("Right Leg").Position).Magnitude <= Reach then
+			firetouchinterest(workspace.TPSSystem.TPS, game.Players.LocalPlayer.Character:WaitForChild("Right Leg"), 0)
+			firetouchinterest(workspace.TPSSystem.TPS, game.Players.LocalPlayer.Character:WaitForChild("Right Leg"), 1)
+		end
+	end
+	if Leg == "Left" and game:GetService("Players").LocalPlayer.Character ~= nil and game:GetService("Players").LocalPlayer.Character.Humanoid.RigType == Enum.HumanoidRigType.R6 then
+		if (workspace.TPSSystem.TPS.Position - game.Players.LocalPlayer.Character:WaitForChild("Left Leg").Position).Magnitude <= Reach then
+			firetouchinterest(workspace.TPSSystem.TPS, game.Players.LocalPlayer.Character:WaitForChild("Left Leg"), 0)
+			firetouchinterest(workspace.TPSSystem.TPS, game.Players.LocalPlayer.Character:WaitForChild("Left Leg"), 1)
+		end
+	end
+end)   
+      end    
+})
+
+-- Bunun gibi
+
+local Tab = Window:MakeTab({
+    Name = "yBloodz crack (new)",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+
+Tab:AddButton({
+    Name = "New Crack",
+    Callback = function()
+              getgenv().Kitten = 5
+loadstring(game:HttpGet("https://raw.githubusercontent.com/yBloodz/.../main/Premke_y"))();
+      end    
+})
+
+local Tab = Window:MakeTab({
+    Name = "Reacts",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+
+Tab:AddButton({
+    Name = "React",
+    Callback = function()
+              getgenv().Kitten = 5
+loadstring(game:HttpGet("https://raw.githubusercontent.com/TheHanki/Cracks/main/yBloodz/React",true))()
+      end    
+})
+
+Tab:AddButton({
+    Name = "auto kick",
+    Callback = function()
+              getgenv().Kitten = 5
+while wait(0.3) do
+    local args = {
+    [1] = workspace.TPSSystem.TPS,
+    [2] = game:GetService("Players").LocalPlayer.Character.HumanoidRootPart,
+    [3] = 30,
+    [4] = Vector3.new(4000000, 300, 4000000)
+}
+
+workspace.FE.Actions.KickG1:FireServer(unpack(args))
+      end
+      end    
+})
